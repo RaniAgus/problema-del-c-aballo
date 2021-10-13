@@ -24,7 +24,7 @@ t_posicion movimientos[] =
     {1, -2}, {2, -1}, {2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}
 };
 
-int intentos = 0;
+unsigned long long int intentos = 0;
 
 bool pertenece(int tamanio, t_posicion posicion);
 bool recorrer(t_tablero tablero, t_posicion caballo);
@@ -39,7 +39,7 @@ bool recorrer(t_tablero tablero, t_posicion pos_inicial)
     bool resuelto = recorrer_recursivo(tablero, pos_inicial, 1);
     if (resuelto)
     {
-        printf("[%d,%d] -> %'d intentos\n", pos_inicial.x, pos_inicial.y, intentos + 1);
+        printf("[%d,%d] -> %'lld intentos\n", pos_inicial.x, pos_inicial.y, intentos + 1);
     }
     else 
     {
