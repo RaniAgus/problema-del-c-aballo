@@ -22,11 +22,7 @@ typedef struct
 } 
 t_tablero;
 
-t_posicion movimientos[] = 
-{
-    {1, -2}, {2, -1}, {2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}
-};
-
+extern t_posicion movimientos[];
 extern unsigned long long int intentos;
 
 bool pertenece(int tamanio, t_posicion posicion);
