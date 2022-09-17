@@ -1,5 +1,9 @@
 #include "solucion.h"
 
+t_posicion movimientos[] = {
+    {1, -2}, {2, -1}, {2, 1}, {1, 2}, {-1, 2}, {-2, 1}, {-2, -1}, {-1, -2}
+};
+
 unsigned long long int intentos = 0;
 
 bool recorrer(t_tablero tablero, t_posicion pos_inicial) 
