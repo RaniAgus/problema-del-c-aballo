@@ -1,4 +1,4 @@
-#include "shared.c"
+#include "solucion.h"
 
 bool init(t_tablero* tablero, int argc, char** argv);
 int reiniciar(t_tablero tablero);
