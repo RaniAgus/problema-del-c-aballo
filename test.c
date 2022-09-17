@@ -1,4 +1,4 @@
-#include "shared.c"
+#include "solucion.h"
 
 void init(t_tablero* tablero, t_posicion* caballo, int argc, char** argv);
 
